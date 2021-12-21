@@ -4,7 +4,7 @@ import {
   RouteRecordRaw
 } from 'vue-router'
 import Home from '@/views/home.vue'
-import Vuex from '@/views/vuex.vue'
+// import Vuex from '@/views/vuex.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -12,16 +12,16 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Home',
     component: Home
   },
-  {
-    path: '/vuex',
-    name: 'Vuex',
-    component: Vuex
-  },
-  {
-    path: '/axios',
-    name: 'Axios',
-    component: () => import('@/views/axios.vue') // 懒加载组件
-  }
+  // {
+  //   path: '/vuex',
+  //   name: 'Vuex',
+  //   component: Vuex
+  // },
+  // {
+  //   path: '/axios',
+  //   name: 'Axios',
+  //   component: () => import('@/views/axios.vue') // 懒加载组件
+  // }
 ]
 
 const router = createRouter({
